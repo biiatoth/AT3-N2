@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraria</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Livraria</h1>
+    
+    <form id="formLivro">
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" name="titulo" required><br><br>
+
+        <label for="autor">Autor:</label>
+        <input type="text" id="autor" name="autor" required><br><br>
+
+        <label for="genero">Gênero:</label>
+        <input type="text" id="genero" name="genero" required><br><br>
+
+        <label for="imagem">URL da Imagem:</label>
+        <input type="url" id="imagem" name="imagem"><br><br>
+
+        <label for="copiasDisponiveis">Cópias Disponíveis:</label>
+        <input type="number" id="copiasDisponiveis" name="copiasDisponiveis" required><br><br>
+
+        <button type="submit">Adicionar Livro</button>
+    </form>
+
+    <div id="livrosLista"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
